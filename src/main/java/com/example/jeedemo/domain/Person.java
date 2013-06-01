@@ -32,7 +32,7 @@ public class Person {
 	private List<Car> cars = new ArrayList<Car>();
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	// @GeneratedValue(strategy = GenerationType.AUTO)
 	public Long getId() {
 		return id;
 	}
@@ -65,7 +65,7 @@ public class Person {
 	}
 
 	// Be careful here, both with lazy and eager fetch type
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	//@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	public List<Car> getCars() {
 		return cars;
 	}

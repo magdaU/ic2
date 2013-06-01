@@ -4,10 +4,15 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 
 @Entity
-@NamedQuery(name = "car.unsold", query = "Select c from Car c where c.sold = false")
+@NamedQueries({
+	@NamedQuery(name = "car.unsold", query = "Select c from Car c where c.sold = false"),
+	@NamedQuery(name= "car.sold", query = "Select c from Car c where c.sold=true"),
+	@NamedQuery(name = "car.all", query = "Select c from Car c")})
+
 public class Car {
 	
 	private Long id;
@@ -16,7 +21,7 @@ public class Car {
 	private Boolean sold = false;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	// @GeneratedValue(strategy = GenerationType.AUTO)
 	public Long getId() {
 		return id;
 	}
