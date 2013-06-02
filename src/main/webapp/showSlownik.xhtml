@@ -6,7 +6,9 @@
 	template="/templates/default.xhtml">
 
 	<ui:define name="content">
+	
 		<h:form>
+		<h:panelGrid columns="2">
 			<h:dataTable value="#{panstwoBean.panstwa}" var="item">
 				<f:facet name="header">Panstwa</f:facet>
 				<h:column>
@@ -14,6 +16,14 @@
 					<h:outputText value="#{item.nazwa}" />
 				</h:column>
 			</h:dataTable>
+			<h:dataTable value="#{miastoBean.miasta}" var="item">
+				<f:facet name="header">Miasta</f:facet>
+				<h:column>
+					<f:facet name="header">Nazwa</f:facet>
+					<h:outputText value="#{item.nazwa}" />
+				</h:column>
+			</h:dataTable>
+			</h:panelGrid>
 		</h:form>
 
 	</ui:define>

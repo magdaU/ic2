@@ -32,7 +32,5 @@ public class CarBean implements Serializable {
 	public ListDataModel<Car> getAutka() {
 		autka.setWrappedData(cm.getAllCars());
 		return autka;
-	}
-	
-	
+	}	
 }
