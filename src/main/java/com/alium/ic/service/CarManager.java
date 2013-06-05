@@ -1,4 +1,4 @@
-package com.example.jeedemo.service;
+package com.alium.ic.service;
 
 
 
@@ -8,7 +8,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import com.example.jeedemo.domain.Car;
+import com.alium.ic.domain.Car;
 
 @Stateless
 public class CarManager {

@@ -1,4 +1,4 @@
-package com.example.jeedemo.service;
+package com.alium.ic.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +7,8 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import com.example.jeedemo.domain.Car;
-import com.example.jeedemo.domain.Person;
+import com.alium.ic.domain.Car;
+import com.alium.ic.domain.Person;
 
 @Stateless
 public class PersonManager {

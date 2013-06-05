@@ -1,4 +1,4 @@
-package com.example.jeedemo.web;
+package com.alium.ic.web;
 
 import java.io.Serializable;
 
@@ -7,8 +7,8 @@ import javax.faces.model.ListDataModel;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import com.example.jeedemo.domain.Panstwo;
-import com.example.jeedemo.service.PanstwoManager;
+import com.alium.ic.domain.Panstwo;
+import com.alium.ic.service.PanstwoManager;
 
 @SessionScoped
 @Named("panstwoBean") // nazwa Beana , nie musi byc taka sama jak nazwa klasy

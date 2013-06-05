@@ -1,16 +1,14 @@
-package com.example.jeedemo.domain;
+package com.alium.ic.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
-
 @Entity
-@Table (name="slow_wojewodztwo")
-@NamedQuery (name="wszystkie.wojewodztwa", query="Select w from Wojewodztwo w")
-public class Wojewodztwo {
-
+@Table(name="slow_panstwo")
+@NamedQuery(name="panstwa.wszystkie", query="Select p from Panstwo p")
+public class Panstwo {
 	@Id
 	private long id;
 	private String nazwa;
@@ -27,4 +25,6 @@ public class Wojewodztwo {
 		this.nazwa = nazwa;
 	}
 	
+	
+
 }

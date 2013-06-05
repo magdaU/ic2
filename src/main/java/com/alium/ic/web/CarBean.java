@@ -1,12 +1,12 @@
-package com.example.jeedemo.web;
+package com.alium.ic.web;
 
 import javax.enterprise.context.SessionScoped;
 import javax.faces.model.ListDataModel;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import com.example.jeedemo.domain.Car;
-import com.example.jeedemo.service.CarManager;
+import com.alium.ic.domain.Car;
+import com.alium.ic.service.CarManager;
 
 import java.io.Serializable;
 

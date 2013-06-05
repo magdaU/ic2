@@ -1,4 +1,4 @@
-package com.example.jeedemo.web;
+package com.alium.ic.web;
 
 import java.io.Serializable;
 import java.util.List;
@@ -7,10 +7,10 @@ import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import com.example.jeedemo.domain.Car;
-import com.example.jeedemo.domain.Person;
-import com.example.jeedemo.service.PersonManager;
-import com.example.jeedemo.service.SellingManager;
+import com.alium.ic.domain.Car;
+import com.alium.ic.domain.Person;
+import com.alium.ic.service.PersonManager;
+import com.alium.ic.service.SellingManager;
 
 @SessionScoped
 @Named("saleBean")

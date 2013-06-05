@@ -1,4 +1,4 @@
-package com.example.jeedemo.domain;
+package com.alium.ic.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
