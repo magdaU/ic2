@@ -7,32 +7,34 @@
 	<h:form>
 	  <ul>
 		<li>
+		
 		  <h:commandLink action="home?faces-redirect=true">
-			<h:outputText value="#{msg.linkHome}" />
+			<b><h:outputText value="#{msg.linkHome}" /></b>
 		  </h:commandLink>
 		</li>
 		<li>
 		  <h:commandLink action="add?faces-redirect=true">
-			<h:outputText value="#{msg.personAddLabel}" />
+			<b><h:outputText value="#{msg.personAddLabel}" /></b>
 		  </h:commandLink></li>
 		<li>
 		  <h:commandLink action="showPersons?faces-redirect=true">
-			 <h:outputText value="#{msg.personAllLabel}" />
+			<b><h:outputText value="#{msg.personAllLabel}" /></b>
 		  </h:commandLink>
 		</li>
 		<li>
 		  <h:commandLink action="sell">
-			 <h:outputText value=" Sell car" />
+			<b><h:outputText value="Sprzedaj samochod" /></b>
 		  </h:commandLink></li>
 		  <li>
 		  <h:commandLink action="showCars?faces-redirect=true">
-			 <h:outputText value="Wszystkie samochody" />
+			<b><h:outputText value="Wszystkie samochody" /></b>
 		  </h:commandLink></li>
 	 <li>
 	 <h:commandLink action="showSlownik">
-	 <h:outputText value="Wszystkie slowniki" />
+	 <b><h:outputText value="Wszystkie slowniki" /></b>
 	 </h:commandLink> </li>
 	</ul>
+	
 	
    </h:form>
   </div>

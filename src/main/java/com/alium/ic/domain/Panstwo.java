@@ -10,12 +10,12 @@ import javax.persistence.Table;
 @NamedQuery(name="panstwa.wszystkie", query="Select p from Panstwo p")
 public class Panstwo {
 	@Id
-	private long id;
+	private Long id;
 	private String nazwa;
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getNazwa() {

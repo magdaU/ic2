@@ -10,13 +10,24 @@
 		<h:form>
 		<h:commandLink action="addMiasto?faces-redirect=true">
 		<h:outputText value="Dodaj miasto" />
+		<h:commandLink action="addPanstwo?faces-redirect=true">
+		<h:outputText value="Dodaj państwo" />
 		</h:commandLink>
-		<h:panelGrid columns="2">
+		<h:panelGrid columns="3">
 			<h:dataTable value="#{panstwoBean.panstwa}" var="item">
 				<f:facet name="header">Panstwa</f:facet>
 				<h:column>
 					<f:facet name="header">Nazwa</f:facet>
 					<h:outputText value="#{item.nazwa}" />
+					<h:column>
+				<f:facet name="header">Usun</f:facet>
+				<h:commandLink value="Usuń państwo" action="#{panstwoBean.deleteCountry}"/>
+				</h:column>
+			
+			    <h:column>
+			    <f:facet name="header">Edytuj</f:facet>
+			    <h:commandLink value="Edytuj państwo" action="#{panstwoBean.editPanstwo}" /></h:column>
+				
 				</h:column>
 			</h:dataTable>
 			<h:dataTable value="#{miastoBean.miasta}" var="item">
@@ -37,6 +48,7 @@
 				
 			</h:dataTable>
 			</h:panelGrid>
+			</h:commandLink>
 		</h:form>
 
 	</ui:define>

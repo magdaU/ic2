@@ -11,13 +11,13 @@
 		<h:form id="personForm">
 			<h:panelGrid columns="2">
 
-				<h:outputText value=" Person " />
+				<h:outputText value=" Osoba " />
 				<h:selectOneMenu value="#{saleBean.personId}">
 					<f:selectItems value="#{saleBean.allPersons}" var="person"
 						itemValue="#{person.id}" itemLabel="#{person.firstName}" />
 				</h:selectOneMenu>
 
-				<h:outputText value=" Car" />
+				<h:outputText value=" Samochod " />
 				<h:selectOneMenu value="#{saleBean.carId}">
 					<f:selectItems value="#{saleBean.availableCars}" var="car"
 						itemValue="#{car.id}" itemLabel="#{car.make} #{car.model}" />
@@ -26,7 +26,7 @@
 
 			</h:panelGrid>
 
-			<h:commandButton value="Sell" action="#{saleBean.sellCar}" />
+			<h:commandButton value=" Sprzedaj " action="#{saleBean.sellCar}" />
 
 			<h:panelGrid>
 				<h:messages id="messages" showDetail="#{true}"
