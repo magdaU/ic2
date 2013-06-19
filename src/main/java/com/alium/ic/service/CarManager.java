@@ -1,7 +1,6 @@
 package com.alium.ic.service;
 
 
-
 import java.util.List;
 
 import javax.ejb.Stateless;
