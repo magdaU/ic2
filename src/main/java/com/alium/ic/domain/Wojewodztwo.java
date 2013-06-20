@@ -8,7 +8,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table (name="slow_wojewodztwo")
-@NamedQuery (name="wszystkie.wojewodztwa", query="Select w from Wojewodztwo w")
+
 public class Wojewodztwo {
 
 	@Id

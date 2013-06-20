@@ -6,8 +6,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import com.alium.ic.domain.Miasto;
-import com.alium.ic.domain.Panstwo;
+import com.alium.ic.domains.SlowPanstwo;
 
 
 @Stateless
@@ -16,20 +15,20 @@ public class PanstwoManager {
 	EntityManager em;
 	
 	@SuppressWarnings("unchecked")
-	public List<Panstwo> getPanstwa()
+	public List<SlowPanstwo> getPanstwa()
 	{ 
 		
 		//zapytanue w EntityManager nazwa, i metoda
 		return em.createNamedQuery("panstwa.wszystkie").getResultList();	
 	}
-	public void addPanstwo(Panstwo country) {
+	public void addPanstwo(SlowPanstwo country) {
 
 		boolean duplicat = false;
 		// pobiera liste z bazy danych wywołując metode powyzej getMiasto() {
 		// return...
-		List<Panstwo> panstwa = getPanstwa();
-		for (Panstwo element : panstwa) {
-			if (country.getNazwa().equals(element.getNazwa()))
+		List<SlowPanstwo> panstwa = getPanstwa();
+		for (SlowPanstwo element : panstwa) {
+			if (country.getKraj().equals(element.getKraj()))
 				duplicat = true;
 		}
 
@@ -40,14 +39,14 @@ public class PanstwoManager {
 		}
 	}
 
-	public void deleteCountry(Panstwo country) {
-		country = em.find(Panstwo.class, country.getId());
+	public void deleteCountry(SlowPanstwo country) {
+		country = em.find(SlowPanstwo.class, country.getId());
 		em.remove(country);
 	}
 	
-	public void  updatePanstwo(Panstwo country){
-		Panstwo updateCountry=em.find(Panstwo.class, country.getId());
-		updateCountry.setNazwa(country.getNazwa());	
+	public void  updatePanstwo(SlowPanstwo country){
+		SlowPanstwo updateCountry=em.find(SlowPanstwo.class, country.getId());
+		updateCountry.setKraj(country.getKraj());	
 	}
 }
 	

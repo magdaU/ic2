@@ -7,8 +7,7 @@ import javax.faces.model.ListDataModel;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import com.alium.ic.domain.Miasto;
-import com.alium.ic.domain.Panstwo;
+import com.alium.ic.domains.SlowPanstwo;
 import com.alium.ic.service.PanstwoManager;
 
 @SessionScoped
@@ -17,43 +16,43 @@ public class PanstwoBean implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 
-	private Panstwo panstwo= new Panstwo();
+	private SlowPanstwo panstwo= new SlowPanstwo();
 	//model danych
-	private ListDataModel<Panstwo> panstwa= new ListDataModel<Panstwo>();
+	private ListDataModel<SlowPanstwo> panstwa= new ListDataModel<SlowPanstwo>();
 	
 	@Inject
 	PanstwoManager pm;
 	
-	public Panstwo getPanstwo() {
+	public SlowPanstwo getPanstwo() {
 		return panstwo;
 	}
-	public void setPanstwo(Panstwo panstwo) {
+	public void setPanstwo(SlowPanstwo panstwo) {
 		this.panstwo = panstwo;
 	}
-	public ListDataModel<Panstwo> getPanstwa() {
+	public ListDataModel<SlowPanstwo> getPanstwa() {
 		panstwa.setWrappedData(pm.getPanstwa());
 		return panstwa;
 	}
 	
 	public String addPanstwo(){
 	pm.addPanstwo(panstwo); // w panstwo manager wywoluje metode addPanstwo z parametrem wejsciowym panstwp (->bean)
-	return "showSlownik"; // przekierowuje na strone showSlownik
+	return null; // przekierowuje na strone showSlownik
 	}
 	public String deleteCountry(){
-	Panstwo countryToDelete= panstwa.getRowData();
+	SlowPanstwo countryToDelete= panstwa.getRowData();
 	pm.deleteCountry(countryToDelete);
 	return null;
 	}
 	// akcja
     public String editPanstwo(){
-	panstwo = new Panstwo(); // Panstwo - klasa , a nie lista 
+	panstwo = new SlowPanstwo(); // Panstwo - klasa , a nie lista 
 	panstwo = panstwa.getRowData();
 	return "editPanstwo";
 	
     }
     public String updatePanstwo(){
 	pm.updatePanstwo(panstwo);
-	panstwo = new Panstwo();
+	panstwo = new SlowPanstwo();
 	return "showSlownik";
 	}
 }

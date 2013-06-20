@@ -17,7 +17,32 @@
 		<!-- Use this data source name for Glassfish -->
 		<!--  <jta-data-source>jdbc/__default</jta-data-source> -->
 
-		<jta-data-source>jdbc/MySQLDataSource</jta-data-source>
+		<jta-data-source>jdbc/TuSql</jta-data-source>
+		<class>com.alium.ic.domains.Agencja</class>
+		<class>com.alium.ic.domains.AgencjaObszUm</class>
+		<class>com.alium.ic.domains.AgencjaUmowa</class>
+		<class>com.alium.ic.domains.AgencjaWyplata</class>
+		<class>com.alium.ic.domains.Obiekt</class>
+		<class>com.alium.ic.domains.ObiektBudowa</class>
+		<class>com.alium.ic.domains.ObiektNieruchomosc</class>
+		<class>com.alium.ic.domains.ObiektOsobaFiz</class>
+		<class>com.alium.ic.domains.ObiektOsobaFizNiefiz</class>
+		<class>com.alium.ic.domains.ObiektOsobaNiefiz</class>
+		<class>com.alium.ic.domains.ObiektSamochod</class>
+		<class>com.alium.ic.domains.Polisa</class>
+		<class>com.alium.ic.domains.PolisaArch</class>
+		<class>com.alium.ic.domains.PolisaOplacenie</class>
+		<class>com.alium.ic.domains.PolisaRaty</class>
+		<class>com.alium.ic.domains.PolisaRyzyko</class>
+		<class>com.alium.ic.domains.PolisaRyzykoElem</class>
+		<class>com.alium.ic.domains.SlowPanstwo</class>
+		<class>com.alium.ic.domains.SlowMarka</class>
+		<class>com.alium.ic.domains.SlowMiasto</class>
+		<class>com.alium.ic.domains.SlowModel</class>
+		<class>com.alium.ic.domains.SlowObszar</class>
+		<class>com.alium.ic.domains.SlowRodzSamochodu</class>
+		<class>com.alium.ic.domains.SlowRyzyko</class>
+		<class>com.alium.ic.domains.SlowWojewodztwo</class>
 		
 		<properties>
 			<!-- Properties for Hibernate (default provider for JBoss AS) -->

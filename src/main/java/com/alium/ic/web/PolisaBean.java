@@ -11,7 +11,7 @@ import com.alium.ic.service.CarManager;
 import java.io.Serializable;
 
 @SessionScoped
-@Named("carBean")
+@Named("polisaBean")
 public class PolisaBean implements Serializable {
 	private static final long serialVersionUID = 1L;
 	

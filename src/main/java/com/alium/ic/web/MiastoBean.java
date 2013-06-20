@@ -7,7 +7,7 @@ import javax.faces.model.ListDataModel;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import com.alium.ic.domain.Miasto;
+import com.alium.ic.domains.SlowMiasto;
 import com.alium.ic.service.MiastoManager;
 
 @SessionScoped
@@ -17,20 +17,20 @@ public class MiastoBean implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	// bean-miasto (obiekt)
-	private Miasto miasto= new Miasto();
+	private SlowMiasto miasto= new SlowMiasto();
 	//model danych
-	private ListDataModel<Miasto> miasta= new ListDataModel<Miasto>();
+	private ListDataModel<SlowMiasto> miasta= new ListDataModel<SlowMiasto>();
 	
 	@Inject
 	MiastoManager mm;
 	
-	public Miasto getMiasto() {
+	public SlowMiasto getMiasto() {
 		return miasto;
 	}
-	public void setMiasto(Miasto miasto) {
+	public void setMiasto(SlowMiasto miasto) {
 		this.miasto = miasto;
 	}
-	public ListDataModel<Miasto> getMiasta() {
+	public ListDataModel<SlowMiasto> getMiasta() {
 		miasta.setWrappedData(mm.getMiasto());
 		return miasta;
 	}	
@@ -39,7 +39,7 @@ public class MiastoBean implements Serializable{
 		mm.addMiasto(miasto); // w miasto manager wywoluje metode addMiasto z parametrem wejsciowym miasto (->bean)
 		return "showSlownik"; // przekierowuje na strone showSlownik
 	}
-	public String deleteCity(){
+	/*public String deleteCity(){
 		Miasto cityToDelete= miasta.getRowData();
 		mm.deleteCity(cityToDelete);
 		return null;
@@ -56,5 +56,5 @@ public class MiastoBean implements Serializable{
 		miasto = new Miasto();
 		return "showSlownik";
 		
-	}
+	}*/
 }

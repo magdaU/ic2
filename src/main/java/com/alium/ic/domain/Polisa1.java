@@ -9,7 +9,7 @@ import javax.persistence.NamedQuery;
 
 @Entity
 
-public class Polisa {
+public class Polisa1 {
 	
 	private Long id;
 	private String rodzaj;
