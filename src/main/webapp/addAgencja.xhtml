@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/templates/default.xhtml"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich">
+
+	<ui:define name="content">
+		<h:form id="agencjaForm">
+			<h:panelGrid columns="3">
+
+				<h:outputText value="Nazwa" />
+				<h:inputText id="nazwa" value="#{agencjaBean.agencja.nazwa}"
+					required="#{true}" />
+				<h:messages for="nazwa" />
+
+				<h:outputText value="NIP" />
+				<h:inputText id="nip" value="#{agencjaBean.agencja.nip}"
+					required="#{true}" />
+				<h:messages for="nip" />
+
+				<h:outputText value="REGON" />
+				<h:inputText id="regon" value="#{agencjaBean.agencja.regon}"
+					required="#{true}" />
+				<h:messages for="regon" />
+
+				<h:outputText value="Wpis do rejestru" />
+				<h:inputText id="wpis" value="#{agencjaBean.agencja.wpisDoRej}"
+					required="#{true}" />
+				<h:messages for="wpis" />
+
+				<h:outputText value="Nr OC" />
+				<h:inputText id="oc" value="#{agencjaBean.agencja.nrObowOc}"
+					required="#{true}" />
+				<h:messages for="oc" />
+
+				<h:outputText value="Przedrostek" />
+				<h:inputText id="ul" value="#{agencjaBean.agencja.przedrostek}"
+					required="#{true}" />
+				<h:messages for="ul" />
+
+				<h:outputText value="Ulica" />
+				<h:inputText id="ulica" value="#{agencjaBean.agencja.ulica}"
+					required="#{true}" />
+				<h:messages for="ulica" />
+
+				<h:outputText value="Nr lokalu" />
+				<h:inputText id="lokal" value="#{agencjaBean.agencja.nrLokal}"
+					required="#{true}" />
+				<h:messages for="lokal" />
+
+
+				<h:outputText value="Kod pocztowy" />
+				<h:inputText id="kod" value="#{agencjaBean.agencja.kodPoczt}"
+					required="#{true}" />
+				<h:messages for="kod" />
+
+				<h:outputText value="E-mail" />
+				<h:inputText id="email" value="#{agencjaBean.agencja.email}"
+					required="#{true}" />
+				<h:messages for="email" />
+
+				<h:outputText value="Nr konta bankowego" />
+				<h:inputText id="nrkonta" value="#{agencjaBean.agencja.nrKontaB}"
+					required="#{true}" />
+				<h:messages for="nrkonta" />
+
+				<h:outputText value="Miasto" />
+				<h:selectOneMenu id="miasto" value="#{agencjaBean.miastoId}">
+					<f:selectItems value="#{agencjaBean.miasta}" var="miasta"
+						itemValue="#{miasta.id}" itemLabel="#{miasta.miasto}" />
+				</h:selectOneMenu>
+				<h:messages for="miasto" />
+
+				<h:outputText value="Wojewodztwo" />
+				<h:selectOneMenu id="woj" value="#{agencjaBean.wojId}">
+					<f:selectItems value="#{agencjaBean.wojewodztwa}" var="woj"
+						itemValue="#{woj.id}" itemLabel="#{woj.wojewodztwo}" />
+				</h:selectOneMenu>
+				<h:messages for="woj" />
+
+				<h:outputText value="Kraj" />
+				<h:selectOneMenu id="kraj" value="#{agencjaBean.krajId}">
+					<f:selectItems value="#{agencjaBean.panstwa}" var="kraj"
+						itemValue="#{kraj.id}" itemLabel="#{kraj.kraj}" />
+				</h:selectOneMenu>
+				<h:messages for="kraj" />
+
+
+			</h:panelGrid>
+
+			<h:commandButton value="#{msg.personFormOKButton}"
+				action="#{agencjaBean.addAgencja}" />
+
+			<h:panelGrid>
+				<h:messages for="" />
+				<h:messages id="messages" showDetail="#{true}"
+					showSummary="#{false}" />
+			</h:panelGrid>
+
+		</h:form>
+
+	</ui:define>
+</ui:composition>
