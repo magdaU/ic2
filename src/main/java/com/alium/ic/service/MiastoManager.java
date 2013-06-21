@@ -9,7 +9,7 @@ import javax.persistence.PersistenceContext;
 import com.alium.ic.domains.SlowMiasto;
 import com.alium.ic.domains.SlowPanstwo;
 
-@Stateless
+@Stateless 
 public class MiastoManager {
 	
 	@PersistenceContext

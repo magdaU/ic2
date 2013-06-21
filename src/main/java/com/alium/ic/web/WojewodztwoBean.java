@@ -10,7 +10,7 @@ import javax.inject.Named;
 import com.alium.ic.domains.SlowWojewodztwo;
 import com.alium.ic.service.WojewodztwoManager;
 
-@SessionScoped
+@SessionScoped 
 @Named("wojewodztwoBean") // nazwa Beana , nie musi byc taka sama jak nazwa klasy
 public class WojewodztwoBean implements Serializable{
 

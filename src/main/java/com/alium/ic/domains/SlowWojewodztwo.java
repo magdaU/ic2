@@ -10,7 +10,7 @@ import java.util.Set;
  * The persistent class for the slow_wojewodztwo database table.
  * 
  */
-@Entity
+@Entity 
 @Table(name="slow_wojewodztwo")
 @NamedQuery (name="wszystkie.wojewodztwa", query="Select w from SlowWojewodztwo w")
 public class SlowWojewodztwo implements Serializable {

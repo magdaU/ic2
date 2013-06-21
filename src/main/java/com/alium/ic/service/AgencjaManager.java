@@ -13,7 +13,7 @@ import com.alium.ic.domains.SlowPanstwo;
 import com.alium.ic.domains.SlowWojewodztwo;
 
 
-@Stateless
+@Stateless 
 public class AgencjaManager {
 
 	@PersistenceContext

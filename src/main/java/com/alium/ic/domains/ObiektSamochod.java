@@ -10,7 +10,7 @@ import java.util.Date;
  * The persistent class for the obiekt_samochod database table.
  * 
  */
-@Entity
+@Entity 
 @Table(name="obiekt_samochod")
 public class ObiektSamochod implements Serializable {
 	private static final long serialVersionUID = 1L;

@@ -11,7 +11,7 @@ import java.util.Date;
  * The persistent class for the polisa_raty database table.
  * 
  */
-@Entity
+@Entity 
 @Table(name="polisa_raty")
 public class PolisaRaty implements Serializable {
 	private static final long serialVersionUID = 1L;

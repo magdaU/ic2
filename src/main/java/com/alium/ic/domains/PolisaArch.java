@@ -11,7 +11,7 @@ import java.util.Date;
  * The persistent class for the polisa_arch database table.
  * 
  */
-@Entity
+@Entity 
 @Table(name="polisa_arch")
 public class PolisaArch implements Serializable {
 	private static final long serialVersionUID = 1L;

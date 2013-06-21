@@ -9,7 +9,7 @@ import java.util.Set;
  * The persistent class for the slow_marka database table.
  * 
  */
-@Entity
+@Entity 
 @Table(name="slow_marka")
 public class SlowMarka implements Serializable {
 	private static final long serialVersionUID = 1L;

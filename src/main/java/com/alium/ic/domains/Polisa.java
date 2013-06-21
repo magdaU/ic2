@@ -11,7 +11,7 @@ import java.util.Set;
  * The persistent class for the polisa database table.
  * 
  */
-@Entity
+@Entity 
 public class Polisa implements Serializable {
 	private static final long serialVersionUID = 1L;
 

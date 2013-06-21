@@ -9,7 +9,7 @@ import java.sql.Timestamp;
  * The persistent class for the polisa_ryzyko_elem database table.
  * 
  */
-@Entity
+@Entity 
 @Table(name="polisa_ryzyko_elem")
 public class PolisaRyzykoElem implements Serializable {
 	private static final long serialVersionUID = 1L;

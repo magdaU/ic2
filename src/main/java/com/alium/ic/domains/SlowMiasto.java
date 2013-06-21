@@ -9,7 +9,7 @@ import java.util.Set;
  * The persistent class for the slow_miasto database table.
  * 
  */
-@Entity
+@Entity 
 @Table(name="slow_miasto")
 @NamedQuery(name="wszystkie.miasta", query = "SELECT m FROM SlowMiasto m")
 public class SlowMiasto implements Serializable {

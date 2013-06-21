@@ -10,7 +10,7 @@ import java.util.Set;
  * The persistent class for the obiekt database table.
  * 
  */
-@Entity
+@Entity 
 public class Obiekt implements Serializable {
 	private static final long serialVersionUID = 1L;
 

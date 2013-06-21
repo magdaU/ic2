@@ -12,7 +12,7 @@ import com.alium.ic.domain.Person;
 import com.alium.ic.service.PersonManager;
 import com.alium.ic.service.SellingManager;
 
-@SessionScoped
+@SessionScoped 
 @Named("personBean")
 public class PersonFormBean implements Serializable {
 

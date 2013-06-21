@@ -10,7 +10,7 @@ import javax.inject.Named;
 import com.alium.ic.domains.SlowPanstwo;
 import com.alium.ic.service.PanstwoManager;
 
-@SessionScoped
+@SessionScoped 
 @Named("panstwoBean") // nazwa Beana , nie musi byc taka sama jak nazwa klasy
 public class PanstwoBean implements Serializable{
 

@@ -9,7 +9,7 @@ import java.sql.Timestamp;
  * The persistent class for the obiekt_osoba_fiz_niefiz database table.
  * 
  */
-@Entity
+@Entity 
 @Table(name="obiekt_osoba_fiz_niefiz")
 public class ObiektOsobaFizNiefiz implements Serializable {
 	private static final long serialVersionUID = 1L;

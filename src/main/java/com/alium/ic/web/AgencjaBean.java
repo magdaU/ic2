@@ -17,7 +17,7 @@ import com.alium.ic.service.MiastoManager;
 import com.alium.ic.service.PanstwoManager;
 import com.alium.ic.service.WojewodztwoManager;
 
-@SessionScoped
+@SessionScoped 
 @Named("agencjaBean") // nazwa Beana , nie musi byc taka sama jak nazwa klasy
 public class AgencjaBean implements Serializable{
 

@@ -9,7 +9,7 @@ import java.util.Set;
  * The persistent class for the slow_rodz_samochodu database table.
  * 
  */
-@Entity
+@Entity 
 @Table(name="slow_rodz_samochodu")
 public class SlowRodzSamochodu implements Serializable {
 	private static final long serialVersionUID = 1L;

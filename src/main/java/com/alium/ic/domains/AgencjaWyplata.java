@@ -10,7 +10,7 @@ import java.math.BigDecimal;
  * The persistent class for the agencja_wyplata database table.
  * 
  */
-@Entity
+@Entity 
 @Table(name="agencja_wyplata")
 public class AgencjaWyplata implements Serializable {
 	private static final long serialVersionUID = 1L;

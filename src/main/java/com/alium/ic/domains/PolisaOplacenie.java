@@ -10,7 +10,7 @@ import java.math.BigDecimal;
  * The persistent class for the polisa_oplacenie database table.
  * 
  */
-@Entity
+@Entity 
 @Table(name="polisa_oplacenie")
 public class PolisaOplacenie implements Serializable {
 	private static final long serialVersionUID = 1L;

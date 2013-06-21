@@ -11,7 +11,7 @@ import java.util.Set;
  * The persistent class for the polisa_ryzyko database table.
  * 
  */
-@Entity
+@Entity 
 @Table(name="polisa_ryzyko")
 public class PolisaRyzyko implements Serializable {
 	private static final long serialVersionUID = 1L;

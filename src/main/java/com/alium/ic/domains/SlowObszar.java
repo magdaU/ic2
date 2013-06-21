@@ -9,7 +9,7 @@ import java.util.Set;
  * The persistent class for the slow_obszar database table.
  * 
  */
-@Entity
+@Entity 
 @Table(name="slow_obszar")
 public class SlowObszar implements Serializable {
 	private static final long serialVersionUID = 1L;

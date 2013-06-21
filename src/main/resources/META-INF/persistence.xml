@@ -17,7 +17,7 @@
 		<!-- Use this data source name for Glassfish -->
 		<!--  <jta-data-source>jdbc/__default</jta-data-source> -->
 
-		<jta-data-source>jdbc/TuSql</jta-data-source>
+		<jta-data-source>jdbctu</jta-data-source>
 		<class>com.alium.ic.domains.Agencja</class>
 		<class>com.alium.ic.domains.AgencjaObszUm</class>
 		<class>com.alium.ic.domains.AgencjaUmowa</class>

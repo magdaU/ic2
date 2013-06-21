@@ -16,7 +16,7 @@ import java.util.Set;
 public class AgencjaUmowa implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@Id
+	@Id 
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 

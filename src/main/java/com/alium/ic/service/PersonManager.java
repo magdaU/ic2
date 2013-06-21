@@ -10,7 +10,7 @@ import javax.persistence.PersistenceContext;
 import com.alium.ic.domain.Car;
 import com.alium.ic.domain.Person;
 
-@Stateless
+@Stateless 
 public class PersonManager {
 
 	@PersistenceContext

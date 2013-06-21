@@ -14,7 +14,7 @@ import com.alium.ic.domain.Person;
  * This is a Stateless EJB Bean
  * All its methods are transactional
  */
-@Stateless
+@Stateless 
 public class SellingManager {
 
 	@PersistenceContext

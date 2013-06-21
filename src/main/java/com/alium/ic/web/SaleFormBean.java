@@ -12,7 +12,7 @@ import com.alium.ic.domain.Person;
 import com.alium.ic.service.PersonManager;
 import com.alium.ic.service.SellingManager;
 
-@SessionScoped
+@SessionScoped 
 @Named("saleBean")
 public class SaleFormBean implements Serializable {
 

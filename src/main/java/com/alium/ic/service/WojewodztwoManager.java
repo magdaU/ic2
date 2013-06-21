@@ -8,7 +8,7 @@ import javax.persistence.PersistenceContext;
 
 import com.alium.ic.domains.SlowWojewodztwo;
 
-@Stateless
+@Stateless 
 public class WojewodztwoManager {
 	
 	@PersistenceContext

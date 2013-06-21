@@ -9,7 +9,7 @@ import java.util.Set;
  * The persistent class for the slow_model database table.
  * 
  */
-@Entity
+@Entity 
 @Table(name="slow_model")
 public class SlowModel implements Serializable {
 	private static final long serialVersionUID = 1L;

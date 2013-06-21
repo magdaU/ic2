@@ -8,7 +8,7 @@ import javax.persistence.PersistenceContext;
 
 import com.alium.ic.domain.Car;
 
-@Stateless
+@Stateless 
 public class PolisaManager {
 	
 	@PersistenceContext
