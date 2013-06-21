@@ -8,6 +8,7 @@ import java.util.Set;
 
 /**
  * The persistent class for the agencja database table.
+ * Entity
  * 
  */
 @Entity
